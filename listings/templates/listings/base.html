@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head> 
+<title>Mervhex</title>
+<link rel="stylesheet" href="{% static 'listings/style.css' %}">
+</head>
+    
+
+<body>
+
+    <nav>
+        <a href="{% url 'band-list' %}" > Groupes</a>
+        <a href="{% url 'contact' %}" > Liste</a>
+        <a href="{% url 'band-create' %}" > Créer un nouveau groupe</a>
+        <a href="{% url 'band-list' %}" > A Propos de nous </a>
+        <a href="{% url 'band-list' %}" > Contactez-nous</a>
+    </nav>
+    
+    {% block content %} {% endblock %}
+</body>
+</html>
